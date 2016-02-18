@@ -9,9 +9,16 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    var mainView = UIView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        mainView.frame = CGRectMake(0, 0, self.view.frame.width, self.view.frame.height)
+        mainView.backgroundColor = UIColor.greenColor()
+        self.view.addSubview(mainView)
+        
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
